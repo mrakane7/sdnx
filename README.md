@@ -6,6 +6,4 @@ Setup your SD Card and homebrew your Nintendo Switch with ease!
 
 To compile and run the application go to the project's directory and type:
 
-```npm install tauri```
-
-```npm run tauri dev```
+```npm install tauri``` & ```npm run tauri dev```
