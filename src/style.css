@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
 *
 {
     margin: 0;
@@ -7,7 +9,7 @@
 
 :root
 {
-    --primary: #454750;
+    --primary: #3c3d44;
     --accent: #1e90ff;
     --background: #eff2ff;
 }
@@ -16,7 +18,7 @@
 {
     --primary: #eff2ff;
     --accent: #1e90ff;
-    --background: #454750;
+    --background: #3c3d44;
 }
 
 body
@@ -51,6 +53,6 @@ body
 
 .switch
 {
-    margin: 27px 30px;
+    margin: 33px 32px;
     cursor: pointer;
 }
