@@ -41,7 +41,8 @@
         "fullscreen": false,
         "resizable": false,
         "title": "SDNX",
-        "width": 950,
+        "titleBarStyle": "Overlay",
+        "width": 900,
         "height": 550
       }
     ]
