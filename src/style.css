@@ -31,6 +31,13 @@ body
 .parent1
 {
     display: flex;
+    height: 100px;
+    margin: 5px 5px;
+}
+
+.parent2
+{
+    margin: 10px 50px;
 }
 
 .logo
@@ -42,8 +49,8 @@ body
 
 .logo img
 {
-    width: 19%;
-    height: 18%;
+    width: 21%;
+    height: 16%;
     margin: auto;
     display: block;
     position: relative;
