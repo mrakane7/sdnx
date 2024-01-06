@@ -10,15 +10,19 @@
 :root
 {
     --primary: #3c3d44;
-    --accent: #1e90ff;
     --background: #eff2ff;
+    --widgets: #e2e6f3;
+    --widgets-border: #d8dae6;
+    --text: #3c3d44;
 }
 
 .dark-mode
 {
     --primary: #eff2ff;
-    --accent: #1e90ff;
     --background: #3c3d44;
+    --widgets: #33343b;
+    --widgets-border: #2c2d34;
+    --text: #eff2ff;
 }
 
 body
@@ -38,6 +42,9 @@ body
 .parent2
 {
     margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .logo
@@ -62,4 +69,103 @@ body
 {
     margin: 33px 32px;
     cursor: pointer;
+}
+
+.widget
+{
+    width: 33%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.widget *
+{
+    box-sizing: border-box;
+}
+
+.dropdown
+{
+    background: var(--widgets);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px var(--widgets-border) solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.dropdown:hover
+{
+    background: var(--widgets-border);
+}
+
+.caret
+{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--text);
+}
+
+.caret-rotate
+{
+    transform: rotate(180deg);
+}
+
+.menu
+{
+    width: 40%;
+    list-style: none;
+    padding: 0.1em 0.5em;
+    background: var(--widgets);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: var(--text);
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li
+{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+} 
+
+.menu li:hover
+{
+    background: var(--widgets-border);
+}
+
+.menu-open
+{
+    display: block;
+    opacity: 1;
+}
+
+.button
+{
+    background: var(--widgets);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px var(--widgets-border) solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background: var(--widgets-border);
 }
